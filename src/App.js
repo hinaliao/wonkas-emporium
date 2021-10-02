@@ -1,8 +1,13 @@
-import './App.css';
+import "./App.css";
+import { BrowserRouter } from "react-router-dom";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+    <BrowserRouter>
+      <Footer />
+    </BrowserRouter>
     </div>
   );
 }
