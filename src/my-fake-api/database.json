@@ -1,7 +1,6 @@
 {
     "products":[
        {
-          "id":1,
           "name":"Wonka Bar",
           "price": 2,
           "img":"https://via.placeholder.com/200x200",
@@ -9,7 +8,6 @@
           "reviews": ["One can never go wrong with classics. Highly recommended 10/10", "The only bar I always buy, as the rest is too bonkers for me","Better than Milka, almost as good as Lindt: 8/10"]
        },
        {
-          "id":2,
           "name":"Scrumdiddlyumptious Bar",
           "price": 1.75,
           "img":"https://via.placeholder.com/200x200",
@@ -17,7 +15,6 @@
           "reviews": ["Cheaper than the regular Wonka Bar and bigger. I always have it: 10/10", "Way too big to carry around, stick with the regular bar: 1/10", "Too hard to pronounce its name: 0/10"]
        },
        {
-          "id":3,
           "name":"Golden Chocolate Eggs",
           "price": 25,
           "img":"https://via.placeholder.com/200x200",
@@ -25,7 +22,6 @@
           "reviews": ["Actually eight times bigger than a regular choclate egg, so cheap for what it offer: 10/10", "Great size, value and taste, but fragile: 9/10", "Best way to end Lent lol 420/10"]
        },
        {
-          "id":4,
           "name":"Chocolate Birds",
           "price": 0.75,
           "img":"https://via.placeholder.com/200x200",
@@ -33,7 +29,6 @@
           "reviews": ["Great for hiking as they are small and pack a lot of calories! 10/10", "Chocolate birds could be bigger: 7/10", "Don't you know about the bird? Everybody knows that bird is the word! 9/10"]
        },
        {
-        "id":5,
         "name":"Chocolate Ice Cream",
         "price": 7,
         "img":"https://via.placeholder.com/200x200",
@@ -41,7 +36,6 @@
         "reviews": ["Best ice cream ever: 10/10", "Best ice cream to take with to the beach! 10/10", "Great for parents with small children and worth the premium: 10/10"]
      },
      {
-        "id":6,
         "name":"Wonka Fudge Mallow",
         "price": 5,
         "img":"https://via.placeholder.com/200x200",
@@ -49,7 +43,6 @@
         "reviews": ["Better than Twix, but more expensive: 8/10", "Nice, but should be cheaper: 3/10", "Great taste and worth it: 7/10"]
      },
      {
-        "id":7,
         "name":"Rainbow Drops",
         "price": 2.50,
         "img":"https://via.placeholder.com/200x200",
@@ -57,7 +50,6 @@
         "reviews": ["Great flavour and I support the cause: 10/10", "Best price of all sweets from Wonka: 10/10", "Great, but they could have more flavours: 8/10"]
      },
      {
-        "id":8,
         "name":"Everlasting Gobstoppers",
         "price": 3,
         "img":"https://via.placeholder.com/200x200",
@@ -65,7 +57,6 @@
         "reviews": ["Best value ever for a chewing gum! 10/10", "Good idea, but the execution is not perfect because the taste gets tiring after a few hours: 6/10", "Nice for a couple of hours: 5/10"]
      },
      {
-        "id":9,
         "name":"Wonka’s Magic Chewing Gum",
         "price": 5,
         "img":"https://via.placeholder.com/200x200",
@@ -73,7 +64,6 @@
         "reviews": ["The GOAT of chewing gums! 10/10", "My daughter had it and she swole up like a balloon! Her body was a balloon! 0/10", "They should change the entrée, but the rest is all good: 7/10"]
      },
      {
-        "id":10,
         "name":"Lickable Wallpapers",
         "price": 10,
         "img":"https://via.placeholder.com/200x200",
@@ -81,7 +71,6 @@
         "reviews": ["I have applied all over my office building. Before that, I used to buy candy for my employees and it made me save so much money: 10/10", "The pets sure do love it... what a mess it makes 0/10","Cool and all, but I wish they had cupuaçu flavour too: 8/10" ]
      },
      {
-        "id":11,
         "name":"Hair Toffee",
         "price": 1.50,
         "img":"https://via.placeholder.com/200x200",
@@ -89,7 +78,6 @@
         "reviews": ["I'm a bald male and I bought Wonka's Hair Toffee as a cure for my condition. My hair did grow indeed and that's fine and dandy... but it fell immediately the next day: 0/10", "Amazing for my Werewolf cosplay. Would buy again: 10/10", "Better than a fake id: 10/10"]
      },
      {
-      "id":12,
       "name":"Fizzy Lifting Drink",
       "price": 9,
       "img":"https://via.placeholder.com/200x200",
