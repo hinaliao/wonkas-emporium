@@ -1,0 +1,89 @@
+{
+    "products":[
+       {
+          "name":"Wonka Bar",
+          "price": 2,
+          "img":"https://via.placeholder.com/200x200",
+          "details":"Wonka's oldest and most famous chocolate bar. This is where the story starts. Have a bite and be part of it!",
+          "reviews": ["One can never go wrong with classics. Highly recommended 10/10", "The only bar I always buy, as the rest is too bonkers for me","Better than Milka, almost as good as Lindt: 8/10"]
+       },
+       {
+          "name":"Scrumdiddlyumptious Bar",
+          "price": 1.75,
+          "img":"https://via.placeholder.com/200x200",
+          "details":"Wonka's biggest chocolate bar also has the longest name! For kids with a voracious apetite for chocolate and for winning a spelling bee conteste!",
+          "reviews": ["Cheaper than the regular Wonka Bar and bigger. I always have it: 10/10", "Way too big to carry around, stick with the regular bar: 1/10", "Too hard to pronounce its name: 0/10"]
+       },
+       {
+          "name":"Golden Chocolate Eggs",
+          "price": 25,
+          "img":"https://via.placeholder.com/200x200",
+          "details":"These huge chocolate eggs are octuple the size of a regular chocolate egg, and, believe you me, on hundred times tastier! Only the best eggs laid by our Golden Geese are selected, so rest assured you will be in cloud nine!",
+          "reviews": ["Actually eight times bigger than a regular choclate egg, so cheap for what it offer: 10/10", "Great size, value and taste, but fragile: 9/10", "Best way to end Lent lol 420/10"]
+       },
+       {
+          "name":"Chocolate Birds",
+          "price": 0.75,
+          "img":"https://via.placeholder.com/200x200",
+          "details":"These convenient Chocolate Birds come in egg form so they're easy to carry around. As soon as you feel you tummy growling, just put them in your mouth and a delicious Chocolate Bird will hatch just for you. Great for hiking!",
+          "reviews": ["Great for hiking as they are small and pack a lot of calories! 10/10", "Chocolate birds could be bigger: 7/10", "Don't you know about the bird? Everybody knows that bird is the word! 9/10"]
+       },
+       {
+        "name":"Chocolate Ice Cream",
+        "price": 7,
+        "img":"https://via.placeholder.com/200x200",
+        "details":"Wonka's Chocolate Ice Cream is just like any other ice cream... except it will never get runny and melt under the sun. That's an ice cream for every occasion!",
+        "reviews": ["Best ice cream ever: 10/10", "Best ice cream to take with to the beach! 10/10", "Great for parents with small children and worth the premium: 10/10"]
+     },
+     {
+        "name":"Wonka Fudge Mallow",
+        "price": 5,
+        "img":"https://via.placeholder.com/200x200",
+        "details":"Caramel, marshmallow and and chocolate topping. All of that put together in a way that only Wonka can. Hot or cold, these treats are always welcome!",
+        "reviews": ["Better than Twix, but more expensive: 8/10", "Nice, but should be cheaper: 3/10", "Great taste and worth it: 7/10"]
+     },
+     {
+        "name":"Rainbow Drops",
+        "price": 2.50,
+        "img":"https://via.placeholder.com/200x200",
+        "details":"Wonka's Rainbow Drops come in 7 different flavours, which change as you taste them. Half of all proceeds from this product will go to the Wonka's LGBTQIA+ Defense Foundation.",
+        "reviews": ["Great flavour and I support the cause: 10/10", "Best price of all sweets from Wonka: 10/10", "Great, but they could have more flavours: 8/10"]
+     },
+     {
+        "name":"Everlasting Gobstoppers",
+        "price": 3,
+        "img":"https://via.placeholder.com/200x200",
+        "details":"Created specifically for kids with little pocket money, the patented Everlasting Gobstoppers are the best chewing gum in the market. They never run out of taste and juice and can be chewed, well... forever! Can't go wrong this one!",
+        "reviews": ["Best value ever for a chewing gum! 10/10", "Good idea, but the execution is not perfect because the taste gets tiring after a few hours: 6/10", "Nice for a couple of hours: 5/10"]
+     },
+     {
+        "name":"Wonka’s Magic Chewing Gum",
+        "price": 5,
+        "img":"https://via.placeholder.com/200x200",
+        "details":"Wonka's Magic Chewing Gum are a full, balanced and tasty meal for when you're on a rush! A full three-course-meal in chewing gum form: tomato soup for appetizer, roast beef for entrée and a very juicy blueberry pie for dessert!",
+        "reviews": ["The GOAT of chewing gums! 10/10", "My daughter had it and she swole up like a balloon! Her body was a balloon! 0/10", "They should change the entrée, but the rest is all good: 7/10"]
+     },
+     {
+        "name":"Lickable Wallpapers",
+        "price": 10,
+        "img":"https://via.placeholder.com/200x200",
+        "details":"Turn any boring room into a marvelous treat for your guests and their children! Kitchen, living room or office, no matter where, the Wonka's Lickable Wallpaper will bring joy to everyone inside!",
+        "reviews": ["I have applied all over my office building. Before that, I used to buy candy for my employees and it made me save so much money: 10/10", "The pets sure do love it... what a mess it makes 0/10","Cool and all, but I wish they had cupuaçu flavour too: 8/10" ]
+     },
+     {
+        "name":"Hair Toffee",
+        "price": 1.50,
+        "img":"https://via.placeholder.com/200x200",
+        "details":"Don't you wish you could instantly grow your hair back, like you were in a barbershop from GTA? Well, now you can! The Wonka's Hair Toffee will make all hair in your body grow instantly... and we better leave it at that!",
+        "reviews": ["I'm a bald male and I bought Wonka's Hair Toffee as a cure for my condition. My hair did grow indeed and that's fine and dandy... but it fell immediately the next day: 0/10", "Amazing for my Werewolf cosplay. Would buy again: 10/10", "Better than a fake id: 10/10"]
+     },
+     {
+      "name":"Fizzy Lifting Drink",
+      "price": 9,
+      "img":"https://via.placeholder.com/200x200",
+      "details":"The most uplifting drink you will ever have! Wonka's Fizzy Lifting Drink will send you skywards like a hot air balloon! But, fear not, to come down to earth again, all you have to do is burp away some of it. Comes in three different flavours. Requires bottle opener.",
+      "reviews": ["Be advised, do not use outdoors: risk of ending up on Uranus: 0/10", "Very unsafe: burping doesn't always work fast enough to bring you down again: 1/10", "An amazing addition to any pic-nic on a sunny day: 9/10"]
+   }
+    ]
+   
+ }
