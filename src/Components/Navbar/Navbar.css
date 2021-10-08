@@ -21,3 +21,15 @@
   font-weight: 900;
   color: white;
 }
+
+.links {
+  display: block;
+  text-decoration: none;
+  transition: color 0.2s;
+  color: white;
+}
+
+.links:hover {
+  text-decoration: none;
+  color: #4180cb;
+}
