@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Subscribe.css";
 
-export default function Subscribe({ createSubs }) {
+export default function Subscribe() {
   const [mail, setEmail] = useState({
     email: "",
   });
@@ -18,13 +18,9 @@ export default function Subscribe({ createSubs }) {
   const validationInput = {
     email: [
       {
-        validation: "/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/i",
+        validation: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/ig.test(mail.email),
         message: "Enter a valid e-mail address",
       },
-      // {
-      //   validation: mail.email.length > 0,
-      //   message: 'Required Field',
-      // },
     ],
   };
 
@@ -32,7 +28,8 @@ export default function Subscribe({ createSubs }) {
     const newErrors = {};
     const validationErr = Object.keys(validationInput).filter((key) => {
       const error = validationInput[key].find((prop) => !prop.validation);
-
+      // console.log(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/ig.test(mail.email));
+      // console.log(mail.email);
       if (error) {
         newErrors[key] = error.message;
         return true;
@@ -50,8 +47,8 @@ export default function Subscribe({ createSubs }) {
   }, [mail, touched]);
 
   const handleChange = (event) => {
-    const { name, mail } = event.target;
-    setEmail({ ...mail, [name]: mail });
+    const { name, value } = event.target;
+    setEmail({ ...mail, [name]: value });
   };
 
   const handleBlur = (event) => {
@@ -65,32 +62,37 @@ export default function Subscribe({ createSubs }) {
     const { email } = mail;
     const user = { email };
 
-    await axios.post("/subscription", user);
-
     const hasError = verify();
     setTouch({
       email: true,
     });
+    // console.log(hasError);
     if (hasError) {
       return;
     }
-
-    createSubs({ email: mail.email, ...mail });
+    
+    await axios.post("https://ironrest.herokuapp.com/wonkalicious-subscriptions", user);
 
     setEmail({
       email: "",
     });
+    setError({
+      email: "",
+    });
+    setTouch({
+      email: false,
+    });
   };
 
-  // const feedback = (touched, error) => {
-  //   if (touched && error) {
-  //     return "error-border";
-  //   }
+  const feedback = (touched, error) => {
+    if (touched && error) {
+      return "error-border";
+    }
 
-  // if (touched && !error) {
-  //   return "okay-border";
-  // }
-  // };
+  if (touched && !error) {
+    return "okay-border";
+  }
+  };
 
   return (
     <div className="email-subs">
@@ -99,8 +101,8 @@ export default function Subscribe({ createSubs }) {
       <form onSubmit={handleInputEmail} className="email-container">
         <div className="signup">
           <input
-            // className={feedback(touched.email, errors.email)}
-            type="email"
+            className={feedback(touched.email, errors.email)}
+            type="text"
             name="email"
             placeholder="Enter E-mail Address"
             value={mail.email}
@@ -111,9 +113,9 @@ export default function Subscribe({ createSubs }) {
           {touched.email && errors.email && (
             <span className="message error">{errors.email}</span>
           )}
-          {/* {touched.email && !errors.email && ( 
+          {touched.email && !errors.email && (
             <span className="message success">Ok</span>
-          )} */}
+          )} 
         </div>
       </form>
     </div>

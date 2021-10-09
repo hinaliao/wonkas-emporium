@@ -12,9 +12,6 @@ function Footer() {
 
   return (
     <div className="footer">
-      <div className="subs-container">
-      </div>
-
       <div className="footer-container">
         <Subscribe inputMail={handleInputEmail} />
         <div>
