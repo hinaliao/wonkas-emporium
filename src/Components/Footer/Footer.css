@@ -1,7 +1,7 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 
 * {
-  font-family: arial, sans-serif;
+  font-family: bilo, sans-serif;
   margin: 0;
   box-sizing: border-box;
 }
@@ -18,10 +18,10 @@
   background-color: #63549e;
 }
 
-h4 {
-  /* text-transform: uppercase; */
+h4 {  
   margin: 22px 0;
   color: #fff;
+  font-weight: 520 !important;
 }
 
 .social {
@@ -56,11 +56,15 @@ ul {
 .ltd {
   align-items: center;
   flex-direction: row;
-  padding: 1% 12% 1% 18%;
+  padding: 0.5% 12% 0.5% 18%;
   font-size: 0.9em;
   display: flex;
   color: rgba(0, 0, 0, 0.5) !important;
   background-color: rgba(231, 228, 248, 1);
+}
+
+.ltd p {
+  margin-bottom: 0;
 }
 
 .pe {

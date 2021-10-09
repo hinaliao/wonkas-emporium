@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 // import 'bootstrap/dist/css/bootstrap.css';
 
 const Navbar = () => (

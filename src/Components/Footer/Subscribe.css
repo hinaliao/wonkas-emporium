@@ -1,5 +1,10 @@
+* {
+  font-family: bilo, sans-serif;
+}
+
 h2 {
-  margin-bottom: 20px;
+  margin-bottom: 20px !important;
+  font-weight: 700 !important;
 }
 
 .email-container {
@@ -26,7 +31,7 @@ input {
   border-radius: 3px;
   opacity: 45%;
   flex-grow: 2;
-  border: none;
+  border: transparent;
 }
 
 input:focus {
@@ -37,17 +42,17 @@ button {
   position: absolute;
   right: 0px;
   z-index: 2;
-  border: none;
+  border: transparent;
   top: 2px;
   font-size: 14px;
   width: 120px;
   height: 39px;
   padding: 10px 22px;
   margin-top: 10px;
-  margin-right: 5px;
+  margin-right: 5px !important;
   background-color: #e7e4f8;
   color: #63549e;
-  border-radius: 3px;
+  border-radius: 3px !important;
   transform: translateX(2px);
 }
 
@@ -63,7 +68,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   /* margin-top: 40px; */
-  padding: 20px;
+  /* padding: 10px; */
   background-color: #63549e;
   border: 1px solid #63549e;
 }
