@@ -2,23 +2,26 @@
 
 * {
   font-family: arial, sans-serif;
-  color: black;
-  margin: 0;  
+  margin: 0;
   box-sizing: border-box;
 }
 
-.footer-container {
-  background-color: #f0f8ff;
-  position: relative;
-  /* padding: 0 20px; */
+.footer {
+  padding-bottom: 40px; 
+}
+
+.footer-container {  
+  padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-evenly;  
+  background-color: #63549e;
 }
 
 h4 {
-  text-transform: uppercase;
-  margin: 22px 0;  
+  /* text-transform: uppercase; */
+  margin: 22px 0;
+  color: #fff;
 }
 
 .social {
@@ -26,7 +29,7 @@ h4 {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  margin: 10px 0;
+  padding-left: 50%;
 }
 
 .social a:hover {
@@ -42,6 +45,7 @@ ul {
   display: block;
   text-decoration: none;
   transition: color 0.2s;
+  color: #fff;
 }
 
 .links:hover {
@@ -50,27 +54,36 @@ ul {
 }
 
 .ltd {
-  text-align: center;
-  padding: 1%;
-  font-size: 0.9em;  
+  align-items: center;
+  flex-direction: row;
+  padding: 1% 12% 1% 18%;
+  font-size: 0.9em;
+  display: flex;
+  color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(231, 228, 248, 1);
 }
 
 .pe {
-    margin-bottom: 15px;    
+  margin-bottom: 15px;
 }
 
 .centered {
-    align-items: center;
+  align-items: center;
 }
 
 .pe p {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
-.pe i {
-    padding-right: 10px;
+i {
+  padding-right: 10px;
+  color: rgba(29, 49, 120, 1);
 }
 
 /* h4 > .centered > p > a {
     padding: 50px 0;
+} */
+
+/* input::placeholder{
+  color: #fff;
 } */
