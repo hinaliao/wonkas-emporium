@@ -108,10 +108,10 @@ export default function Subscribe({ createSubs }) {
             onBlur={handleBlur}
           />
           <button type="submit">Sign Up</button>
-          {/* {touched.email && errors.email && (
+          {touched.email && errors.email && (
             <span className="message error">{errors.email}</span>
           )}
-          {/* {touched.email && !errors.email && (
+          {/* {touched.email && !errors.email && ( 
             <span className="message success">Ok</span>
           )} */}
         </div>
