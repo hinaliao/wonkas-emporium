@@ -11,10 +11,12 @@
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
     text-align: right;
+    background-color: rgb(99,84,158);
 }
 
-.bg-dark {
+.extended-navbar {
     text-align: end;
+    background-color: rgb(99,84,158);
 }
 
 .strong-text{
