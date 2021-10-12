@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { commerce } from "./lib/commerce";
-// import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Navbar, Products } from "./Components";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+import { Navbar, Products, Footer } from "./Components";
 import "./App.css";
 
 function App() {
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div>
-      {/* <BrowserRouter> */}
+      <BrowserRouter>
         <Navbar />
         <Products products={products}/>
         {/* <Switch>
@@ -29,7 +29,8 @@ function App() {
 
           </Route>
         </Switch> */}
-      {/* </BrowserRouter> */}
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
