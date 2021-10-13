@@ -19,8 +19,8 @@ const CartItem = ({ item, updQty, removeItem }) => {
         className={style.media}
       />
       <CardContent className={style.cardContent}>
-        <Typography variant="h3">{item.name}</Typography>
-        <Typography variant="h5">
+        <Typography variant="body1">{item.name}</Typography>
+        <Typography variant="body1">
           {item.line_total.formatted_with_symbol}
         </Typography>
       </CardContent>
