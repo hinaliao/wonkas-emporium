@@ -19,8 +19,6 @@ const Cart = ({ cart, updQty, removeItem, clearCart }) => {
     </Typography>
   );
 
-  if (!cart.line_items) return "Loading...";
-
   const renderCart = () => (
     <>
       <Grid container spacing={3}>
