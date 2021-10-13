@@ -1,34 +1,73 @@
 import React, { useState, useEffect } from "react";
 import { commerce } from "./lib/commerce";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Navbar, Products, Footer } from "./Components";
+import { Navbar, Products, Cart, Footer } from "./Components";
+
+import { CssBaseline } from "@material-ui/core";
 import "./App.css";
 
 function App() {
   const [products, setProducts] = useState([]);
+  const [cart, setCart] = useState({});
 
   const fetchProducts = async () => {
     // response (destructured)
-    const { data } = await commerce.products.list();
-
+    const { data } = await commerce.products.list(); //data -> products
     setProducts(data);
+  };
+
+  const fetchCart = async () => {
+    setCart(await commerce.cart.retrieve());
+  };
+
+  const handleAdd = async (productId, quantity) => {
+    const item = await commerce.cart.add(productId, quantity);
+    setCart(item.cart);
+  };
+
+  const handleUpdateCart = async (lineItemId, quantity) => {
+    const response = await commerce.cart.update(lineItemId, { quantity });
+    setCart(response.cart);
+  };
+
+  const handleRemoveFromCart = async (lineItemId) => {
+    const response = await commerce.cart.remove(lineItemId);
+    setCart(response.cart);
+  };
+
+  const handleClearCart = async () => {
+    const response = await commerce.cart.empty();
+    setCart(response.cart);
   };
 
   useEffect(() => {
     fetchProducts();
+    fetchCart();
   }, []);
   // console.log(products);
 
   return (
     <div>
+      <CssBaseline />
       <BrowserRouter>
         <Navbar />
-        <Products products={products}/>
-        {/* <Switch>
-          <Route>
-
+        <Switch>
+          <Route exact path="/">
+            <Products
+              products={products}
+              onAddToCart={handleAdd}
+              handleUpdateCart
+            />
           </Route>
-        </Switch> */}
+          <Route exact path="/cart">
+            <Cart
+              cart={cart}
+              onUpdateCartQty={handleUpdateCart}
+              onRemoveFromCart={handleRemoveFromCart}
+              onEmptyCart={handleClearCart}
+            />
+          </Route>
+        </Switch>
         <Footer />
       </BrowserRouter>
     </div>

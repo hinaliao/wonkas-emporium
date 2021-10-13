@@ -6,20 +6,24 @@
   box-sizing: border-box;
 }
 
-.footer {
-  padding-bottom: 40px; 
+.footer {  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;  
 }
 
-.footer-container {  
+.footer-container {
   padding: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;  
+  justify-content: space-evenly;
   background-color: #63549e;
 }
 
-h4 {  
-  margin: 22px 0;
+h3 {
+  margin-top: 5px;
+  margin-bottom: 22px;
   color: #fff;
   font-weight: 520 !important;
 }

@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import 'bootstrap/dist/css/bootstrap.css';
 import Subscribe from "./Subscribe.js";
 import "./Footer.css";
 
@@ -15,7 +14,7 @@ function Footer() {
       <div className="footer-container">
         <Subscribe inputMail={handleInputEmail} />
         <div>
-          <h4>Legal</h4>
+          <h3>Legal</h3>
           <div className="centered pe">
             <p>
               <Link to="#" className="links">
@@ -39,7 +38,7 @@ function Footer() {
         </div>
 
         <div>
-          <h4>Useful</h4>
+          <h3>Useful</h3>
           <div className="centered pe">
             <p>
               <Link to="#" className="links">
@@ -62,7 +61,7 @@ function Footer() {
         </div>
 
         <div>
-          <h4>Info</h4>
+          <h3>Info</h3>
           <div className="centered pe">
             <p>
               <Link to="#" className="links">
