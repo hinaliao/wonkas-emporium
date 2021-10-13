@@ -34,24 +34,21 @@ const Cart = ({ cart, updQty, removeItem, clearCart }) => {
         </Typography>
         <div>
           <Button
-            className={style.emptyBtn}
-            size="large"
+            className={style.clearBtn}
+            size="medium"
             type="button"
             variant="contained"
-            color="rgba(251, 36, 72, 1)"
             onClick={handleClearCart}
           >
             Clear cart
           </Button>
-
           <Button
             className={style.checkoutBtn}
             component={Link}
             to="/checkout"
-            size="large"
+            size="medium"
             type="button"
             variant="contained"
-            color="rgba(25, 209, 111, 1)"
           >
             Proceed to Checkout
           </Button>
@@ -59,6 +56,7 @@ const Cart = ({ cart, updQty, removeItem, clearCart }) => {
       </div>
     </>
   );
+  // console.log(cart.line_items.length);
 
   return (
     <Container>
