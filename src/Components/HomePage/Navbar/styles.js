@@ -1,4 +1,4 @@
-import { makeStyles, fade } from "@material-ui/core/styles";
+import { makeStyles, alpha } from "@material-ui/core/styles";
 
 const drawerWidth = 0;
 
@@ -9,7 +9,9 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
-      backgroundColor: "rgba(99, 84, 158, 1)",
+      backgroundColor: "white",
+      display: "flex",
+      justifyContent: "space-evenly",
     },
   },
   title: {    
@@ -42,14 +44,14 @@ export default makeStyles((theme) => ({
   centralBox: {
     display: "flex",
     flexDirection: "row",
-    flexWrap: "nowrap",
+    margin: "0 auto",
     alignContent: "center",
-    justifyCcontent: "center",
-    alignIitems: "center",
-    width: "auto",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "75%",
     position: "relative",
-    paddingLeft: "25%",
-    paddingRight: "25%",
+    paddingLeft: "34%",
+    paddingRight: "15%",
 },
   
   grow: {
@@ -58,10 +60,10 @@ export default makeStyles((theme) => ({
   search: {
     position: "relative",
     borderRadius: theme.shape.borderRadius,
-/*     backgroundColor: alpha(theme.palette.common.white, 0.15),
+    backgroundColor: alpha(theme.palette.common.white, 0.15),
     "&:hover": {
       backgroundColor: alpha(theme.palette.common.white, 0.25),
-    }, */
+    },
     marginRight: theme.spacing(2),
     marginLeft: 0,
     width: "100%",

@@ -17,10 +17,13 @@ function App() {
   };
 
   const fetchCart = async () => {
+    // const response = await commerce.cart.retrieve();
+    // setCart(response);
     setCart(await commerce.cart.retrieve());
   };
 
   const handleAdd = async (productId, quantity) => {
+    //response
     const item = await commerce.cart.add(productId, quantity);
     setCart(item.cart);
   };
@@ -45,12 +48,13 @@ function App() {
     fetchCart();
   }, []);
   // console.log(products);
+  console.log(cart);
 
   return (
     <div>
       <CssBaseline />
       <BrowserRouter>
-        <Navbar />
+        <Navbar totalItems={cart.total_items}/>
         <Switch>
           <Route exact path="/">
             <Products

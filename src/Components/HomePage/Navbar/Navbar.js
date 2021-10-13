@@ -7,7 +7,8 @@ import {
   Badge,
   Typography,
 } from "@material-ui/core";
-import { ShoppingCart, MenuIcon, } from "@material-ui/icons";
+import { ShoppingCart, Person, MenuIcon, } from "@material-ui/icons";
+
 
 import logo from "/home/desapiero/project-2/src/images/logo-navbar.png";
 import useStyles from "./styles";
@@ -75,6 +76,7 @@ function Navbar({ totalItems }) {
           >
             Login
           </Typography>
+                  <Person />
                 <Badge badgeContent={totalItems} color="secondary">
                   <ShoppingCart />
                 </Badge>
