@@ -9,6 +9,9 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("sm")]: {
       width: `calc(100% - ${drawerWidth}px)`,
       marginLeft: drawerWidth,
+      backgroundColor: "white",
+      display: "flex",
+      justifyContent: "space-evenly",
     },
   },
   title: {    
@@ -17,6 +20,8 @@ export default makeStyles((theme) => ({
     textDecoration: "none",
     marginTop: "20px",
     marginBottom: "20px",
+    fontSize: "20px",
+    color: "rgba(13, 14, 67, 1)"
   },
   tags: {
     alignItems: "center",
@@ -36,6 +41,19 @@ export default makeStyles((theme) => ({
       display: "none",
     },
   },
+  centralBox: {
+    display: "flex",
+    flexDirection: "row",
+    margin: "0 auto",
+    alignContent: "center",
+    justifyContent: "space-between",
+    alignItems: "center",
+    width: "75%",
+    position: "relative",
+    paddingLeft: "34%",
+    paddingRight: "15%",
+},
+  
   grow: {
     flexGrow: 1,
   },
