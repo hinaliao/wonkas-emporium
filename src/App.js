@@ -66,9 +66,9 @@ function App() {
           <Route exact path="/cart">
             <Cart
               cart={cart}
-              onUpdateCartQty={handleUpdateCart}
-              onRemoveFromCart={handleRemoveFromCart}
-              onEmptyCart={handleClearCart}
+              updQty={handleUpdateCart}
+              removeItem={handleRemoveFromCart}
+              clearCart={handleClearCart}
             />
           </Route>
         </Switch>

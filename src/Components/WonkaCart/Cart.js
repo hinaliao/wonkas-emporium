@@ -63,7 +63,7 @@ const Cart = ({ cart, updQty, removeItem, clearCart }) => {
   return (
     <Container>
       <div className={style.toolbar} />
-      <Typography className={style.title} variant="h3" gutterBottom>
+      <Typography className={style.title} variant="h4" gutterBottom>
         Your Cart
       </Typography>
       {!cart.line_items.length ? renderEmptyCart() : renderCart()}
