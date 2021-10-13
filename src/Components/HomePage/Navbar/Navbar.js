@@ -76,7 +76,7 @@ function Navbar({ totalItems }) {
           >
             Login
           </Typography>
-                  <Person />
+                  <Person sx={{ color: "FFFFFF" }}/>
                 <Badge badgeContent={totalItems} color="secondary">
                   <ShoppingCart />
                 </Badge>

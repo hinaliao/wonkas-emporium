@@ -22,7 +22,7 @@ const ProductCard = ({ product, onAddToCart }) => {
         className={style.media}
         image={product.image.url}
         title={product.name}
-        style={{ objectFit: "contain" }}
+        //style={{ objectFit: "contain" }}
       />
       <CardContent>
         <div className={style.cardContent}>
