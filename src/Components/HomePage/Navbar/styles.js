@@ -3,7 +3,11 @@ import { makeStyles, fade } from "@material-ui/core/styles";
 const drawerWidth = 0;
 
 export default makeStyles((theme) => ({
+<<<<<<< HEAD
   appBar: {
+=======
+  navbar: {
+>>>>>>> 167d5386d27b784dcfcea5306540f2f5e327644d
     boxShadow: "none",
     borderBottom: "transparent",
     [theme.breakpoints.up("sm")]: {
@@ -11,6 +15,7 @@ export default makeStyles((theme) => ({
       marginLeft: drawerWidth,
     },
   },
+<<<<<<< HEAD
   title: {
     flexGrow: 1,
     alignItems: "center",
@@ -21,6 +26,26 @@ export default makeStyles((theme) => ({
     marginRight: "10px",
     width: '139px',
     height: '63px',
+=======
+  title: {    
+    alignItems: "center",
+    display: "flex",
+    textDecoration: "none",
+    marginTop: "20px",
+    marginBottom: "20px",
+  },
+  tags: {
+    alignItems: "center",
+    display: "flex",
+    textDecoration: "none",
+    color: "rgba(251, 36, 72, 1)",
+  },
+  image: {
+    marginRight: "10px",
+    marginLeft: "20px",
+    width: '100px',
+    height: '42px',
+>>>>>>> 167d5386d27b784dcfcea5306540f2f5e327644d
   },
   menuButton: {
     marginRight: theme.spacing(2),
@@ -59,7 +84,10 @@ export default makeStyles((theme) => ({
   },
   inputInput: {
     padding: theme.spacing(1, 1, 1, 0),
+<<<<<<< HEAD
     // vertical padding + font size from searchIcon
+=======
+>>>>>>> 167d5386d27b784dcfcea5306540f2f5e327644d
     paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
     transition: theme.transitions.create("width"),
     width: "100%",
@@ -68,6 +96,7 @@ export default makeStyles((theme) => ({
     },
   },
 }));
+<<<<<<< HEAD
 
 
 
@@ -85,3 +114,5 @@ export default makeStyles((theme) => ({
 
 
 
+=======
+>>>>>>> 167d5386d27b784dcfcea5306540f2f5e327644d

@@ -1,45 +1,40 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
-import "./styles.js";
+import React from "react";
+import {
+  Card,
+  CardMedia,
+  CardContent,
+  CardActions,
+  Typography,
+  IconButton,
+} from "@material-ui/core";
+import { AddShoppingCart } from "@material-ui/icons";
 
-export default function ProductCard(props) {
-  // console.log(props);
-  const [product, setProduct] = useState([
-    {
-      img: "",
-      name: "",
-      price: "",
-    },
-  ]);
+import useStyles from "./styles";
 
-  useEffect(() => {
-    async function fetchData() {
-      try {
-        const id = props.match.params.id;
-        const response = await axios.get(
-          `https://ironrest.herokuapp.com/wonkalicious-products/${id}`
-        )
-        
-        let card = response.data;
-        // console.log(card);
-        setProduct(Object.values({
-          ...product,
-          img: card.img,
-          name: card.name,
-          price: card.price,
-        }));
-      } catch (err) {}
-    }
-    fetchData();
-  }, [props]);
+const ProductCard = ({ product, onAddToCart}) => {
+  const style = useStyles();
+  const handleAdd = () => onAddToCart(product.id, 1);
 
   return (
-    <div className="card" style={{ width: "18rem" }}>
-      <img className="card-img-top" src={product.img} alt={product.name} />
-      <div className="card-body">
-        <p className="card-text">{product.name}</p>
-        <p className="card-text">{product.price}</p>
-      </div>
-    </div>
+    <Card className={style.root}>
+      <CardMedia className={style.media} image="" title={product.name} />
+      <CardContent>
+        <div className={style.cardContent}>
+          <Typography variant="h6" gutterBottom>
+            {product.name}
+          </Typography>
+
+          <Typography variant="h6">{product.price}</Typography>
+        </div>
+      </CardContent>
+
+      <CardActions>
+        <IconButton aria-label="Add to Cart" onClick={handleAdd}>
+          <AddShoppingCart />
+        </IconButton>
+      </CardActions>
+    </Card>
   );
-}
+};
+
+export default ProductCard;
