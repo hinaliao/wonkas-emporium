@@ -71,7 +71,7 @@ function Navbar({ totalItems }) {
                   to="/"
                   className={style.title}
                   variant="h5"
-                  color="rgba(251, 36, 72, 1)"
+                  color="#fb2448"
                 >
                   Login
                 </Typography>

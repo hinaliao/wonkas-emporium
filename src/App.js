@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { commerce } from "./lib/commerce";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Navbar, Products, Cart, Footer } from "./Components";
+import { Navbar, Products, Cart, Checkout, Footer } from "./Components";
 
 import { CssBaseline } from "@material-ui/core";
 import "./App.css";
@@ -48,13 +48,13 @@ function App() {
     fetchCart();
   }, []);
   // console.log(products);
-  console.log(cart);
+  // console.log(cart);
 
   return (
     <div>
       <CssBaseline />
       <BrowserRouter>
-        <Navbar totalItems={cart.total_items}/>
+        <Navbar totalItems={cart.total_items} />
         <Switch>
           <Route exact path="/">
             <Products
@@ -70,6 +70,9 @@ function App() {
               removeItem={handleRemoveFromCart}
               clearCart={handleClearCart}
             />
+          </Route>
+          <Route exact path="/checkout">
+            <Checkout cart={cart}/>
           </Route>
         </Switch>
         <Footer />

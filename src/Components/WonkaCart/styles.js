@@ -14,17 +14,20 @@ export default makeStyles((theme) => ({
       marginRight: "20px",
     },
     backgroundColor: '#FB2448',
+    color: 'white',
   },
   checkoutBtn: {
     minWidth: "150px",
     backgroundColor: '#19D16F',
+    color: 'white',
   },
   link: {
     textDecoration: "none",
   },
   cardDetails: {
     display: "flex",
-    marginTop: "10%",
+    marginTop: "5%",
+    marginBottom: '2%',
     width: "100%",
     justifyContent: "space-between",
   },
