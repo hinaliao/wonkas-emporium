@@ -2,7 +2,7 @@ import React from "react";
 import { TextField, Grid } from "@material-ui/core";
 import { useFormContext, Controller } from "react-hook-form";
 
-const InputForm = ({ name, label, required }) => {
+const InputForm = ({ name, label }) => {
   const { control } = useFormContext();
 
   return (
@@ -16,7 +16,7 @@ const InputForm = ({ name, label, required }) => {
             {...field}
             name={name}
             label={label}
-            required={required} // if the field is required or not
+            required // if the field is required or not, boolean -> true
             fullWidth
           />
         )}

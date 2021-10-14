@@ -48,7 +48,7 @@ function App() {
     fetchCart();
   }, []);
   // console.log(products);
-  console.log(cart);
+  // console.log(cart);
 
   return (
     <div>
@@ -72,7 +72,7 @@ function App() {
             />
           </Route>
           <Route exact path="/checkout">
-            <Checkout />
+            <Checkout cart={cart}/>
           </Route>
         </Switch>
         <Footer />

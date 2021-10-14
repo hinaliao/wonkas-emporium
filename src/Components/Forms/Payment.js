@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+import Review from './Review';
 
 const Payment = () => {
     return (
-        <div>
-            Payment
-        </div>
+        <>
+            <Review />
+        </>
     )
 }
 

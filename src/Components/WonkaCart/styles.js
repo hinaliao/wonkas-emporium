@@ -14,10 +14,12 @@ export default makeStyles((theme) => ({
       marginRight: "20px",
     },
     backgroundColor: '#FB2448',
+    color: 'white',
   },
   checkoutBtn: {
     minWidth: "150px",
     backgroundColor: '#19D16F',
+    color: 'white',
   },
   link: {
     textDecoration: "none",
