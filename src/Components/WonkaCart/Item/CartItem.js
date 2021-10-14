@@ -43,11 +43,13 @@ const CartItem = ({ item, updQty, removeItem }) => {
             +
           </Button>
         </div>
+        <br />
         <Button
           variant="contained"
           type="button"
           color="secondary"
           onClick={() => handleRemoveFromCart(item.id)}
+          className={style.btn}
         >
           Remove
         </Button>

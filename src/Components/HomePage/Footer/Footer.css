@@ -20,7 +20,7 @@
   background-color: #63549e;
 }
 
-h3 {
+.footer-container h3 {
   margin-top: 5px;
   margin-bottom: 22px;
   color: #fff;
@@ -82,7 +82,7 @@ ul {
   margin: 10px 0;
 }
 
-i {
+.social i {
   padding-right: 10px;
   color: rgba(29, 49, 120, 1);
 }

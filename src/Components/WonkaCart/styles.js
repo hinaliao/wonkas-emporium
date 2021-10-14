@@ -24,7 +24,8 @@ export default makeStyles((theme) => ({
   },
   cardDetails: {
     display: "flex",
-    marginTop: "10%",
+    marginTop: "5%",
+    marginBottom: '2%',
     width: "100%",
     justifyContent: "space-between",
   },
