@@ -16,4 +16,7 @@ export default makeStyles(() => ({
     display: "flex",
     alignItems: "center",
   },
+  btn: {
+    backgroundColor: '#EBD094',
+  }
 }));

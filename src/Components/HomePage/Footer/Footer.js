@@ -53,7 +53,7 @@ function Footer() {
             </p>
 
             <p>
-              <Link to="/aboutus" className="links">
+              <Link to="#" className="links">
                 Contact
               </Link>
             </p>
