@@ -51,11 +51,12 @@ const Payment = ({ checkoutToken, prevStep, nextStep, shippingData, onGetCheckou
             payment_method_id: paymentMethod.id,
           },
         },
-      };
-      setFinished(false);
-      await onGetCheckout(checkoutToken.id, orderData);
+      };      
       setFinished(true);
+
+      await onGetCheckout(checkoutToken.id, orderData);
       nextStep();
+      setFinished(false);
     }
   };
 

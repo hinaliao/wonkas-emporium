@@ -52,13 +52,7 @@ const Checkout = ({ cart, order, onGetCheckout, error }) => {
     nextStep();
   };
 
-  const timeout = () => {
-    setTimeout(() => {
-      setFinished(true);
-    }, 3000);
-  };
-
-  let Confirmation = () =>
+  let Confirmation = () =>  
     order.customer ? (
       <>
         <div>

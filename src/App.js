@@ -56,7 +56,6 @@ function App() {
         checkoutTokenId,
         newOrder
       );
-      
       setOrder(incomingOrder);
       refreshCart();
     } catch (error) {
