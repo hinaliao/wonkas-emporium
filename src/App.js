@@ -9,6 +9,8 @@ import "./App.css";
 function App() {
   const [products, setProducts] = useState([]);
   const [cart, setCart] = useState({});
+  const [order, setOrder] = useState({});
+  const [errorMsg, setErrorMsg] = useState("");
 
   const fetchProducts = async () => {
     // response (destructured)
@@ -28,19 +30,37 @@ function App() {
     setCart(item.cart);
   };
 
-  const handleUpdateCart = async (lineItemId, quantity) => {
-    const response = await commerce.cart.update(lineItemId, { quantity });
+  const handleUpdateCart = async (itemId, quantity) => {
+    const response = await commerce.cart.update(itemId, { quantity });
     setCart(response.cart);
   };
 
-  const handleRemoveFromCart = async (lineItemId) => {
-    const response = await commerce.cart.remove(lineItemId);
+  const handleRemoveFromCart = async (itemId) => {
+    const response = await commerce.cart.remove(itemId);
     setCart(response.cart);
   };
 
   const handleClearCart = async () => {
     const response = await commerce.cart.empty();
     setCart(response.cart);
+  };
+
+  const refreshCart = async () => {
+    const newCart = await commerce.cart.refresh();
+    setCart(newCart);
+  };
+
+  const handleGetCheckout = async (checkoutTokenId, newOrder) => {
+    try {
+      const incomingOrder = await commerce.checkout.capture(
+        checkoutTokenId,
+        newOrder
+      );
+      setOrder(incomingOrder);
+      refreshCart();
+    } catch (error) {
+      setErrorMsg(error.data.error.message);
+    }
   };
 
   useEffect(() => {
@@ -55,7 +75,7 @@ function App() {
       <CssBaseline />
       <BrowserRouter>
         <Navbar totalItems={cart.total_items} />
-        <Switch>
+        <Switch style={{ display: 'flex' }}>
           <Route exact path="/">
             <Products
               products={products}
@@ -72,7 +92,12 @@ function App() {
             />
           </Route>
           <Route exact path="/checkout">
-            <Checkout cart={cart}/>
+            <Checkout
+              cart={cart}
+              order={order}
+              onGetCheckout={handleGetCheckout}
+              error={errorMsg}
+            />
           </Route>
         </Switch>
         <Footer />
