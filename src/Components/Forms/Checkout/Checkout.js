@@ -17,7 +17,7 @@ import Address from "../Address";
 import Payment from "../Payment";
 import useStyles from "./styles";
 
-const steps = ["Shipping Address", "Payment Details"]; //to map steps
+const steps = ["Shipping Address", "Payment Details"]; //to map between the steps
 
 const Checkout = ({ cart, order, onGetCheckout, error }) => {
   const style = useStyles();
@@ -57,7 +57,7 @@ const Checkout = ({ cart, order, onGetCheckout, error }) => {
       <>
         <div>
           <Typography variant="h5">
-            Thank you for your purchase, {order.customer.firstname} 
+            Thank you for your purchase, {order.customer.firstname} &nbsp;
             {order.customer.lastname}!
           </Typography>
           <Divider className={style.divider} />
