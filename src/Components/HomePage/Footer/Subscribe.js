@@ -97,7 +97,7 @@ export default function Subscribe() {
   return (
     <div className="email-subs">
       <h2>Don't miss out!</h2>
-      <p>Subscribe to our newsteller and get updated!</p>
+      <p>Subscribe to our newsletter and get updated!</p>
       <form onSubmit={handleInputEmail} className="email-container">
         <div className="signup">
           <input
