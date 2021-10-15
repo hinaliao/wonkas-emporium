@@ -13,18 +13,21 @@ export default makeStyles((theme) => ({
     [theme.breakpoints.up("xs")]: {
       marginRight: "20px",
     },
-    backgroundColor: '#FB2448',
+    backgroundColor: '#927CEB',
+    color: 'white',
   },
   checkoutBtn: {
     minWidth: "150px",
-    backgroundColor: '#19D16F',
+    backgroundColor: '#4C9E7C',
+    color: 'white',
   },
   link: {
     textDecoration: "none",
   },
   cardDetails: {
     display: "flex",
-    marginTop: "10%",
+    marginTop: "5%",
+    marginBottom: '2%',
     width: "100%",
     justifyContent: "space-between",
   },

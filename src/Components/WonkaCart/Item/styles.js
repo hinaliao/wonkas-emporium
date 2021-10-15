@@ -9,11 +9,14 @@ export default makeStyles(() => ({
     display: "flex",
     justifyContent: "space-between",
   },
-  cartActions: {
-    justifyContent: "space-between",
+  cardActions: {
+    justifyContent: "space-around",
   },
   buttons: {
     display: "flex",
     alignItems: "center",
   },
+  btn: {
+    backgroundColor: '#EBD094',
+  }
 }));

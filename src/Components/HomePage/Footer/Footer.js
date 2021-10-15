@@ -42,7 +42,7 @@ function Footer() {
           <div className="centered pe">
             <p>
               <Link to="#" className="links">
-                Acessibility
+                Accessibility
               </Link>
             </p>
 
@@ -53,7 +53,7 @@ function Footer() {
             </p>
 
             <p>
-              <Link to="/aboutus" className="links">
+              <Link to="#" className="links">
                 Contact
               </Link>
             </p>

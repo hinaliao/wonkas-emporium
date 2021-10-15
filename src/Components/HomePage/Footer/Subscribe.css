@@ -2,7 +2,7 @@
   font-family: bilo, sans-serif;
 }
 
-h2 {
+.email-subs h2 {
   margin-bottom: 20px !important;
   font-weight: 700 !important;
 }
@@ -11,7 +11,7 @@ h2 {
   margin-top: 12px;
 }
 
-form {
+.email-container form {
   display: flex;
   flex-direction: row;
   padding: 2px;
@@ -22,7 +22,7 @@ form {
   position: relative;
 }
 
-input {
+.signup input {
   font-size: 14px;
   width: 100%;
   height: 44px;
@@ -34,11 +34,11 @@ input {
   border: transparent;
 }
 
-input:focus {
+.signup input:focus {
   outline: none;
 }
 
-button {
+.signup button {
   position: absolute;
   right: 0px;
   z-index: 2;

@@ -6,10 +6,10 @@ import useStyles from "./styles";
 const CartItem = ({ item, updQty, removeItem }) => {
   const style = useStyles();
 
-  const handleUpdateCart = (lineItemId, newQuantity) =>
-  updQty(lineItemId, newQuantity);
+  const handleUpdateCart = (itemId, newQuantity) =>
+  updQty(itemId, newQuantity);
 
-  const handleRemoveFromCart = (lineItemId) => removeItem(lineItemId);
+  const handleRemoveFromCart = (itemId) => removeItem(itemId);
 
   return (
     <Card className="cart-item">
@@ -43,11 +43,12 @@ const CartItem = ({ item, updQty, removeItem }) => {
             +
           </Button>
         </div>
+        <br />
         <Button
           variant="contained"
           type="button"
-          color="secondary"
           onClick={() => handleRemoveFromCart(item.id)}
+          className={style.btn}
         >
           Remove
         </Button>
