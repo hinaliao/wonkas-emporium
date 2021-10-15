@@ -46,7 +46,7 @@ function Navbar({ totalItems }) {
 
             <Typography
               component={Link}
-              to="/"
+              to="/about"
               className={style.title}
               color="rgba(251, 36, 72, 1)"
             >

@@ -9,17 +9,12 @@ const InputForm = ({ name, label }) => {
     <Grid item xs={12} sm={6}>
       <Controller
         defaultValue=""
-        control={control}
+        as={TextField} //import all the variables from the textField
         name={name}
-        render={({ field }) => (
-          <TextField //import all the variables from the textField
-            {...field}
-            name={name}
-            label={label}
-            required // if the field is required or not, boolean -> true
-            fullWidth
-          />
-        )}
+        control={control}
+        label={label}
+        fullWidth
+        required // if the field is required or not, boolean -> true
       />
     </Grid>
   );
