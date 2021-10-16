@@ -48,10 +48,10 @@ const Address = ({ checkoutToken, next }) => {
       checkoutTokenId,
       { country, region: stateProvince }
     );
-    // console.log(shippingOptions);
     setShippingOptions(options);
-    setShippingOption(options[0].id);
+    // setShippingOption(options[0].id);
   };
+  // console.log(shippingOptions);
 
   //run immediatly after soon as the address form renders
   useEffect(() => {
@@ -79,7 +79,9 @@ const Address = ({ checkoutToken, next }) => {
   //     'BR',
   //     'AC'
   //   );
-  // }, [])
+  //   fetchShippingCountries(checkoutToken.id)
+  // }, [])   
+  // console.log(shippingCountries);
 
   return (
     <>
@@ -104,7 +106,7 @@ const Address = ({ checkoutToken, next }) => {
             <InputForm name="email" label="E-mail" />
             <InputForm name="city" label="City" />
             <InputForm name="zip" label="ZIP / Postal Code" />
-            <SelectInput
+            {/* <SelectInput
               label="Shipping Country"
               value={shippingCountry}
               onChange={(e) => { 
@@ -118,11 +120,11 @@ const Address = ({ checkoutToken, next }) => {
                   label: name,
                 }) // keyValuePair -> code, name
               )}
-            />
+            /> */}
             {/* {console.log(Object.entries(shippingCountries).map(([code, name]) => ({id: code, label: name})))} */}
 
             {/* after knowing which country, fetch a subdivision  */}
-            <SelectInput
+            {/* <SelectInput
               label="Shipping Subdivision"
               value={shippingSubdivision}
               onChange={(e) => setSubdivision(e.target.value)}
@@ -130,10 +132,10 @@ const Address = ({ checkoutToken, next }) => {
                 id: code,
                 label: name,
               }))}
-            />
+            /> */}
 
             {/* after knowing which subdivision, get the shipping opt  */}
-            <SelectInput
+            {/* <SelectInput
               label="Shipping Options"
               value={shippingOption}
               onChange={(e) => setShippingOption(e.target.value)}
@@ -141,7 +143,7 @@ const Address = ({ checkoutToken, next }) => {
                 id,
                 label: `${description} - (${price.formatted_with_symbol})`,
               }))}
-            />
+            /> */}
           </Grid>
           <br />
           <div style={{ display: "flex", justifyContent: "space-between" }}>

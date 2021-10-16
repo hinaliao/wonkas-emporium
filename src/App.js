@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { commerce } from "./lib/commerce";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
-import { Navbar, Products, Cart, Checkout, Footer } from "./Components";
+import { Navbar, Products, Cart, Checkout, Footer, About } from "./Components";
 
 import { CssBaseline } from "@material-ui/core";
 import "./App.css";
@@ -101,6 +101,9 @@ function App() {
               />
             </Route>
           </Switch>
+          <Route exact path="/about">
+            <About />
+          </Route>
         </div>
         <Footer />
       </BrowserRouter>

@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@material-ui/core";
 import { ShoppingCart, Person } from "@material-ui/icons";
+import ErrorPage from "../../ErrorPage/ErrorPage";
 
 import logo from "../../../images/logo-navbar.png";
 import useStyles from "./styles";

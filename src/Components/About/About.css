@@ -1,0 +1,36 @@
+.about {
+  margin-top: 80px;  
+  position: relative;  
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.nil {
+  position: absolute;
+}
+
+.nil h1 {
+  font-family: decoy, serif;
+  padding: 30px;
+}
+
+.nil img {
+  max-width: 400px;
+}
+
+.nil p {
+  font-size: 21px;
+  font-weight: 500;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #63549E;
+}
+
+a:hover {
+  color: #101750;
+}

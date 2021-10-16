@@ -52,7 +52,7 @@ const Payment = ({ checkoutToken, prevStep, nextStep, shippingData, onGetCheckou
             payment_method_id: paymentMethod.id,
           },
         },
-      };      
+      };
       setFinished(true);
 
       await onGetCheckout(checkoutToken.id, orderData);

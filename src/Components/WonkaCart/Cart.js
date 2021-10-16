@@ -10,7 +10,7 @@ const Cart = ({ cart, updQty, removeItem, clearCart }) => {
   const handleClearCart = () => clearCart();
 
   const renderEmptyCart = () => (
-    <Typography variant="body1">
+    <Typography variant="body1" className={style.center}>
       You have no items in your cart, start shopping
       <Link className={style.link} to="/">
         &ensp;here
