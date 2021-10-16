@@ -39,7 +39,7 @@ function Navbar({ totalItems }) {
               component={Link}
               to="/"
               className={style.title}
-              color="rgba(251, 36, 72, 1)"
+              color="inherit"
             >
               Home
             </Typography>
@@ -48,7 +48,7 @@ function Navbar({ totalItems }) {
               component={Link}
               to="/about"
               className={style.title}
-              color="rgba(251, 36, 72, 1)"
+              color="inherit"
             >
               About
             </Typography>
@@ -57,7 +57,7 @@ function Navbar({ totalItems }) {
               component={Link}
               to="/"
               className={style.title}
-              color="rgba(251, 36, 72, 1)"
+              color="inherit"
             >
               Shop
             </Typography>
@@ -71,7 +71,7 @@ function Navbar({ totalItems }) {
                   to="/"
                   className={style.title}
                   variant="h5"
-                  color="#fb2448"
+                  color="inherit"
                 >
                   Login
                 </Typography>
@@ -84,19 +84,6 @@ function Navbar({ totalItems }) {
                 aria-label="Show cart items"
                 color="inherit"
               >
-<<<<<<< HEAD
-               <Typography
-            component={Link}
-            to="/"
-            className={style.title}
-            variant="h5"
-            color="rgba(251, 36, 72, 1)"
-          >
-            Login
-          </Typography>
-                  <Person sx={{ color: "FFFFFF" }}/>
-=======
->>>>>>> ff67671c5f3ae112c8507e16f459427496cffa3b
                 <Badge badgeContent={totalItems} color="secondary">
                   <ShoppingCart />
                 </Badge>
