@@ -57,7 +57,7 @@ const Checkout = ({ cart, order, onGetCheckout, error }) => {
       <>
         <div>
           <Typography variant="h5">
-            Thank you for your purchase, {order.customer.firstname} &nbsp;
+            Thank you for your purchase, {order.customer.firstname}&nbsp;
             {order.customer.lastname}!
           </Typography>
           <Divider className={style.divider} />
