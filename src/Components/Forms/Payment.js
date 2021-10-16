@@ -37,14 +37,15 @@ const Payment = ({ checkoutToken, prevStep, nextStep, shippingData, onGetCheckou
           email: shippingData.email,
         },
         shipping: {
-          name: "International",
+          name: "Domestic",
           street: shippingData.address,
           town_city: shippingData.city,
           country_state: shippingData.shippingSubdivision,
           postal_zip_code: shippingData.zip,
           country: shippingData.shippingCountry || 'BR',
         },
-        fulfillment: { shipping_method: shippingData.shippingOption || 'ship_LvJjoPjODle0nO'},
+        // fulfillment: { shipping_method: shippingData.shippingOption || 'ship_LvJjoPjODle0nO'},
+        fulfillment: { shipping_method: 'ship_LvJjoPjODle0nO'},
         payment: {
           gateway: "stripe",
           stripe: {
