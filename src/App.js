@@ -74,32 +74,34 @@ function App() {
     <div>
       <CssBaseline />
       <BrowserRouter>
-        <Navbar totalItems={cart.total_items} />
-        <Switch style={{ display: 'flex' }}>
-          <Route exact path="/">
-            <Products
-              products={products}
-              onAddToCart={handleAdd}
-              handleUpdateCart
-            />
-          </Route>
-          <Route exact path="/cart">
-            <Cart
-              cart={cart}
-              updQty={handleUpdateCart}
-              removeItem={handleRemoveFromCart}
-              clearCart={handleClearCart}
-            />
-          </Route>
-          <Route exact path="/checkout">
-            <Checkout
-              cart={cart}
-              order={order}
-              onGetCheckout={handleGetCheckout}
-              error={errorMsg}
-            />
-          </Route>
-        </Switch>
+        <div className="body">
+          <Navbar totalItems={cart.total_items} />
+          <Switch style={{ display: "flex" }}>
+            <Route exact path="/">
+              <Products
+                products={products}
+                onAddToCart={handleAdd}
+                handleUpdateCart
+              />
+            </Route>
+            <Route exact path="/cart">
+              <Cart
+                cart={cart}
+                updQty={handleUpdateCart}
+                removeItem={handleRemoveFromCart}
+                clearCart={handleClearCart}
+              />
+            </Route>
+            <Route exact path="/checkout">
+              <Checkout
+                cart={cart}
+                order={order}
+                onGetCheckout={handleGetCheckout}
+                error={errorMsg}
+              />
+            </Route>
+          </Switch>
+        </div>
         <Footer />
       </BrowserRouter>
     </div>
