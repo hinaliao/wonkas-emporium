@@ -10,12 +10,19 @@ import { loadStripe } from "@stripe/stripe-js";
 import Review from "./Review";
 import useStyles from "./styles";
 
-const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY); //stripe public key
+const stripePromise = loadStripe(process.env.REACT_APP_STRIPE_KEY);
 
-const Payment = ({ checkoutToken, prevStep, nextStep, shippingData, onGetCheckout, setFinished }) => {
+const Payment = ({
+  checkoutToken,
+  prevStep,
+  nextStep,
+  shippingData,
+  onGetCheckout,
+  setFinished,
+}) => {
   const style = useStyles();
 
-  const handleSubmit = async (event, elements, stripe) => {    
+  const handleSubmit = async (event, elements, stripe) => {
     event.preventDefault();
 
     if (!stripe || !elements) return;
@@ -42,10 +49,9 @@ const Payment = ({ checkoutToken, prevStep, nextStep, shippingData, onGetCheckou
           town_city: shippingData.city,
           country_state: shippingData.shippingSubdivision,
           postal_zip_code: shippingData.zip,
-          country: shippingData.shippingCountry || 'BR',
+          country: shippingData.shippingCountry || "BR",
         },
-        // fulfillment: { shipping_method: shippingData.shippingOption || 'ship_LvJjoPjODle0nO'},
-        fulfillment: { shipping_method: 'ship_LvJjoPjODle0nO'},
+        fulfillment: { shipping_method: "ship_LvJjoPjODle0nO" },
         payment: {
           gateway: "stripe",
           stripe: {
@@ -66,7 +72,7 @@ const Payment = ({ checkoutToken, prevStep, nextStep, shippingData, onGetCheckou
       <Review checkoutToken={checkoutToken} />
       <Divider />
       <Typography variant="h6" gutterBottom style={{ margin: "20px 0" }}>
-        Payment method 
+        Payment method
       </Typography>
 
       <Elements stripe={stripePromise}>
@@ -77,7 +83,11 @@ const Payment = ({ checkoutToken, prevStep, nextStep, shippingData, onGetCheckou
               <br />
               <br />
               <div style={{ display: "flex", justifyContent: "space-between" }}>
-                <Button variant="contained" onClick={prevStep} className ={style.btnBack} >
+                <Button
+                  variant="contained"
+                  onClick={prevStep}
+                  className={style.btnBack}
+                >
                   Back
                 </Button>
                 <Button

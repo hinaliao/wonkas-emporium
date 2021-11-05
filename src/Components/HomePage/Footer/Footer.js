@@ -33,7 +33,6 @@ function Footer() {
                 Terms of Use
               </Link>
             </p>
-          
           </div>
         </div>
 
@@ -76,19 +75,6 @@ function Footer() {
             </p>
           </div>
         </div>
-
-        {/* <div>
-          <h4>Contact</h4>
-          <div className="centered pe">
-            <p>
-              <i className="bi bi-house-fill"></i>Loompaland
-            </p>
-            <p>
-              <i className="bi bi-envelope-fill"></i>
-              wonkalicious@wonka.com
-            </p>
-          </div>
-        </div> */}
       </div>
 
       <div className="ltd">

@@ -6,7 +6,6 @@ const SelectInput = ({ label, value, onChange, options }) => {
     <Grid style={{ marginTop: "15px" }} item xs={12} sm={6}>
       <InputLabel> {label}</InputLabel>
       <Select value={value} fullWidth onChange={onChange}>
-      {/* {console.log(value)} */}
         {options.map(({ id, label }) => (
           <MenuItem key={id} value={id}>
             {label}

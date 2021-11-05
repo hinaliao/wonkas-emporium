@@ -17,7 +17,7 @@ import Address from "../Address";
 import Payment from "../Payment";
 import useStyles from "./styles";
 
-const steps = ["Shipping Address", "Payment Details"]; //to map between the steps
+const steps = ["Shipping Address", "Payment Details"]; 
 
 const Checkout = ({ cart, order, onGetCheckout, error }) => {
   const style = useStyles();
@@ -31,21 +31,19 @@ const Checkout = ({ cart, order, onGetCheckout, error }) => {
   const nextStep = () => setActiveStep((prevActiveStep) => prevActiveStep + 1);
   const prevStep = () => setActiveStep((prevActiveStep) => prevActiveStep - 1);
 
-  //when proceeding with the checkout, it'll generate a token
   useEffect(() => {
     const generateToken = async () => {
       try {
         const token = await commerce.checkout.generateToken(cart.id, {
           type: "cart",
-        });
-        // console.log(token);
+        });        
         setCheckoutToken(token);
       } catch {
         if (activeStep !== steps.length) history.push("/");
       }
     };
     generateToken();
-  }, [cart]); //update dynamically as the cart changes
+  }, [cart]); 
 
   const next = (data) => {
     setShippingData(data);

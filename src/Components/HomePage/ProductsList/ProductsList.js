@@ -3,16 +3,6 @@ import { Grid } from "@material-ui/core";
 import ProductCard from "./ProductCard/ProductCard";
 import useStyles from "./styles";
 
-// const productsList = [
-//   { id: 1, name: "Wonka Bar", description: "Chocolate bar.", price: "$5" },
-//   {
-//     id: 2,
-//     name: "Chocolate Ice Cream",
-//     description: "Wonka chocolate ice cream.",
-//     price: "$10",
-//   },
-// ];
-
 const Products = ({ products, onAddToCart }) => {
   const style = useStyles();
 

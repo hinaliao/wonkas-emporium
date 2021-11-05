@@ -12,8 +12,7 @@ import { AddShoppingCart } from "@material-ui/icons";
 import useStyles from "./styles";
 
 const ProductCard = ({ product, onAddToCart }) => {
-  const style = useStyles();
-  // console.log(product);
+  const style = useStyles();  
   const handleAdd = () => onAddToCart(product.id, 1);
 
   return (

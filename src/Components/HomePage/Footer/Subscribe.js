@@ -18,7 +18,9 @@ export default function Subscribe() {
   const validationInput = {
     email: [
       {
-        validation: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/ig.test(mail.email),
+        validation: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/gi.test(
+          mail.email
+        ),
         message: "Enter a valid e-mail address",
       },
     ],
@@ -28,8 +30,6 @@ export default function Subscribe() {
     const newErrors = {};
     const validationErr = Object.keys(validationInput).filter((key) => {
       const error = validationInput[key].find((prop) => !prop.validation);
-      // console.log(/^[A-Z0-9._%+-]+@[A-Z0-9.-]+.[A-Z]{2,4}$/ig.test(mail.email));
-      // console.log(mail.email);
       if (error) {
         newErrors[key] = error.message;
         return true;
@@ -66,12 +66,14 @@ export default function Subscribe() {
     setTouch({
       email: true,
     });
-    // console.log(hasError);
     if (hasError) {
       return;
     }
-    
-    await axios.post("https://ironrest.herokuapp.com/wonkalicious-subscriptions", user);
+
+    await axios.post(
+      "https://ironrest.herokuapp.com/wonkalicious-subscriptions",
+      user
+    );
 
     setEmail({
       email: "",
@@ -89,9 +91,9 @@ export default function Subscribe() {
       return "error-border";
     }
 
-  if (touched && !error) {
-    return "okay-border";
-  }
+    if (touched && !error) {
+      return "okay-border";
+    }
   };
 
   return (
@@ -115,7 +117,7 @@ export default function Subscribe() {
           )}
           {touched.email && !errors.email && (
             <span className="message success">Ok</span>
-          )} 
+          )}
         </div>
       </form>
     </div>
