@@ -1,4 +1,4 @@
-# Ironhhack WebDev Project #2: Wonka Emporium - E-commerce Application
+# Ironhhack WebDev Project #2: Wonka's Emporium
 
 Wonka Emporium in a chocolate and candy e-commerce application developed as a project for Ironhack's WedDev Full Stack Course. This Single Page Application (SPA) was developed in REACT, using additional libraries from Material-UI and a third-party API called "Commerce.js".
 
