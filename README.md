@@ -1,6 +1,6 @@
 # Ironhhack WebDev Project #2: Wonka's Emporium
 
-Wonka Emporium in a chocolate and candy e-commerce application developed as a project for Ironhack's WedDev Full Stack Course. This Single Page Application (SPA) was developed in REACT, using additional libraries from Material-UI and a third-party API called "Commerce.js".
+Wonka's Emporium is a chocolate and candy e-commerce application developed as a project for Ironhack's WedDev Full Stack Course. This Single Page Application (SPA) was developed in REACT, using additional libraries from Material-UI and a third-party API called "Commerce.js".
 
 Wonka Emporium was inspired by Ronald Dahl's book "Charlie and the Chocolate Factory" and its movie adaptations. All products were extracted from the source material and our SPA is chock-full of references to the source material and we invite you to discover all of them. Unfortunately, the products are still all fictional, but Oompa Loompas are working hard on making them real ;).
 
