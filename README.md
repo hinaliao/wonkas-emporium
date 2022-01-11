@@ -52,5 +52,5 @@ Should you want to contribute to our project, please, do not hesitate to fork th
 
 ## Authors and Version Control
 
-React SPA aplication developed by **Hina Liao - https://github.com/hinaliao/**, **Júlia Sakakibara - https://github.com/juliasakakibara/** & **Piero Naraya Basto de Sá - https://github.com/desapiero/t** - *Wonka Emporium API App Version beta 1.0* - 
+React SPA developed by **Hina Liao - https://github.com/hinaliao/**, **Júlia Sakakibara - https://github.com/juliasakakibara/** & **Piero Naraya Basto de Sá - https://github.com/desapiero/t** - *Wonka Emporium API App Version beta 1.0* - 
 **Published in October 16th, 2021**
